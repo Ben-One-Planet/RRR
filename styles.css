@@ -1,3 +1,5 @@
+/*Universal Styles*/
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +12,11 @@ body {
     font-family: 'Prompt', sans-serif;
 }
 
-.main_content_wrapper {
+
+
+/*Mobile Styles*/
+
+.main_content_wrapper_mobile {
     width: 100%;
     position: relative;
 }
@@ -32,4 +38,34 @@ body {
     height: 40px;
     background-color: crimson;
     border-radius: 150px;
+}
+
+.form_container {
+    width: 90%;
+    margin: 0 auto;
+    background: #FBFBFB;
+    -webkit-box-shadow: 0px 4px 34px rgba(134, 134, 134, 0.25);
+    box-shadow: 0px 4px 34px rgba(134, 134, 134, 0.25);
+}
+
+.form_container h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+    text-transform: capitalize;
+    padding: 0.4em;
+}
+
+.form_container p {
+    text-align: center;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #959393;
+    padding: 0.4em;
+}
+
+.heading_bold {
+    color: #0499D3;
 }
