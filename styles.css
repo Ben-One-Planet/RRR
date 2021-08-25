@@ -4,3 +4,32 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+body {
+    background: #fff;
+    font-family: 'Prompt', sans-serif;
+}
+
+.main_content_wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.logo_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    padding: 3% 0;
+}
+
+.temp {
+    width: 40px;
+    height: 40px;
+    background-color: crimson;
+    border-radius: 150px;
+}
