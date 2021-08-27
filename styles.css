@@ -187,7 +187,7 @@ body {
 .footer_side li {
     list-style: none;
     line-height: 1.2;
-    padding: 0.5em 0;
+    padding: 0.5em 0.2em;
 }
 
 .footer_side li a {
