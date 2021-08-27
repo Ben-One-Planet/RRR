@@ -12,6 +12,13 @@ body {
     font-family: 'Prompt', sans-serif;
 }
 
+.temp {
+    width: 40px;
+    height: 40px;
+    background-color: crimson;
+    border-radius: 150px;
+}
+
 
 
 /*Mobile Styles*/
@@ -21,7 +28,8 @@ body {
     position: relative;
 }
 
-.logo_container {
+.logo_container,
+.BBB_container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -67,4 +75,81 @@ body {
 
 .heading_bold {
     color: #0499D3;
+}
+
+.input_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 88%;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+.input_wrapper label {
+    font-size: 14px;
+    padding-bottom: 0.5em;
+}
+
+.input_wrapper select {
+    height: 48px;
+    background-color: white;
+    border: 1px solid #959393;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image:
+        linear-gradient(45deg, transparent 50%, #959393 50%),
+        linear-gradient(135deg, #959393 50%, transparent 50%);
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat;
+}
+
+.input_wrapper input {
+    height: 48px;
+    background-color: white;
+    border: 1px solid #959393;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.zip_copy {
+    margin-top: 1.3em;
+}
+
+.btn_container {
+    text-align: center;
+    padding: 2em 0 1.5em 0;
+}
+
+.zip_button {
+    width: 88%;
+    height: 48px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    background-color: #2D4EC1;
+    color: white;
+    cursor: pointer;
 }
