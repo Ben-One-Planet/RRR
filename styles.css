@@ -120,6 +120,7 @@ body {
         5px 5px,
         1px 1.5em;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .input_wrapper input {
@@ -211,4 +212,5 @@ body {
 .lower_footer_container p a {
     color: white;
     text-decoration: underline;
+    cursor: pointer;
 }
