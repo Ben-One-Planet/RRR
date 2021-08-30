@@ -41,7 +41,8 @@ body {
     padding: 3% 0;
 }
 
-.logo_container img {
+.logo_container img,
+.BBB_container img {
     width: 100%;
     display: block;
     height: auto;
@@ -64,7 +65,7 @@ body {
     padding: 0.4em;
 }
 
-.form_container p {
+.form_sub_text {
     text-align: center;
     font-weight: normal;
     font-size: 13px;
@@ -95,35 +96,148 @@ body {
     padding-bottom: 0.5em;
 }
 
-.input_wrapper select {
-    height: 48px;
-    background-color: white;
-    border: 1px solid #959393;
-    display: inline-block;
+.select-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
     font: inherit;
-    line-height: 1.5em;
-    padding: 0.5em 3.5em 0.5em 1em;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-image:
-        linear-gradient(45deg, transparent 50%, #959393 50%),
-        linear-gradient(135deg, #959393 50%, transparent 50%);
-    background-position:
-        calc(100% - 20px) calc(1em + 2px),
-        calc(100% - 15px) calc(1em + 2px),
-        calc(100% - 2.5em) 0.5em;
-    background-size:
-        5px 5px,
-        5px 5px,
-        1px 1.5em;
-    background-repeat: no-repeat;
+    color: #251E1E;
+}
+
+/*
+@media (min-width: 768px) {
+    .select-box {
+        width: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    .select-box {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .select-box {
+        width: 30%;
+    }
+}
+*/
+
+.select-box__current {
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+
+.select-box__current:focus + .select-box__list {
+    opacity: 1;
+    -webkit-animation-name: none;
+    animation-name: none;
+}
+
+.select-box__current:focus + .select-box__list .select-box__option {
     cursor: pointer;
 }
 
-.input_wrapper input {
+.select-box__current:focus .select-box__icon {
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.select-box__icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 20px;
+    opacity: 0.5;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+
+.select-box__value {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.select-box__input {
+    display: none;
+}
+
+.select-box__input:checked + .select-box__input-text {
+    display: block;
+}
+
+.select-box__input-text {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid #959393;
+    height: 48px;
+}
+
+.select-box__list {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    -webkit-animation-name: HideList;
+    animation-name: HideList;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: step-start;
+    animation-timing-function: step-start;
+}
+
+.select-box__option {
+    display: block;
+    padding: 10px 15px;
+    background-color: #fff;
+    font-size: 16px;
+    height: 48px;
+}
+
+.select-box__option:hover,
+.select-box__option:focus {
+    color: #2D4EC1;
+}
+
+@-webkit-keyframes HideList {
+    from {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+
+    to {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+    }
+}
+
+@keyframes HideList {
+    from {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+
+    to {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+    }
+}
+
+.zip_input {
     height: 48px;
     background-color: white;
     border: 1px solid #959393;
@@ -153,6 +267,7 @@ body {
     background-color: #2D4EC1;
     color: white;
     cursor: pointer;
+    letter-spacing: 2px;
 }
 
 .footer_container {
