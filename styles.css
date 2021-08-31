@@ -1,20 +1,15 @@
 /*Universal Styles*/
 
 * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-html {
-    height: 100%;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 body {
     background: #fff;
     font-family: 'Prompt', sans-serif;
-    min-height: 100%;
 }
 
 .temp {
@@ -29,8 +24,8 @@ body {
 /*Mobile Styles*/
 
 .main_content_wrapper {
-    width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .logo_container,
@@ -164,7 +159,7 @@ body {
     padding: 12px 15px 10px 15px;
     background-color: #fff;
     border: 1px solid #959393;
-    height: 48px;
+/*    height: 48px;*/
 }
 
 .select-box__list {
@@ -190,7 +185,7 @@ body {
     padding: 10px 15px;
     background-color: #fff;
     font-size: 16px;
-    height: 48px;
+/*    height: 48px;*/
 }
 
 .select-box__option:hover,
@@ -223,13 +218,13 @@ body {
 }
 
 .zip_input {
-    height: 48px;
+/*    height: 48px;*/
     background-color: white;
     border: 1px solid #959393;
     display: inline-block;
     font: inherit;
     line-height: 1.5em;
-    padding: 0.5em;
+    padding: 0.8em;
     text-align: center;
 }
 
@@ -321,43 +316,9 @@ body {
     transition: 500ms color ease;
 }
 
-.desktop_right {
-    display: none;
-}
-
 /*Desktop Styles*/
 
-@media screen and (min-width: 1020px) {
-    .desktop_wrapper {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-    }
-
-    .desktop_left {
-        -webkit-box-flex: 1;
-        -ms-flex: 1;
-        flex: 1;
-    }
-
-    .desktop_right {
-        -webkit-box-flex: 2;
-        -ms-flex: 2;
-        flex: 2;
-        display: block;
-        overflow: hidden;
-        width: 100%;
-    }
-
-    .desktop_right img {
-        width: 100%;
-        display: block;
-        min-height: 100%;
-    }
+@media screen and (min-width: 791px) {
 
     .footer_container {
         -webkit-box-orient: vertical;
