@@ -260,7 +260,7 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 1em 2em;
+    padding: 1em;
     background-color: #FBFBFB;
 }
 
@@ -280,7 +280,7 @@ body {
 .footer_side li {
     list-style: none;
     line-height: 1.2;
-    padding: 0.5em 0.2em;
+    padding: 0.5em;
 }
 
 .footer_side li a {
@@ -313,14 +313,106 @@ body {
     transition: 500ms color ease;
 }
 
+@media screen and (min-width: 768px) {
 
-@media screen and (min-width: 791px) {
+    .form_container {
+        width: 65%;
+        max-width: 500px;
+    }
+
+    .form_container h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .logo_container img,
+    .BBB_container img {
+        width: 10%;
+    }
+
+    .logo_container,
+    .BBB_container {
+        padding: 3% 0;
+    }
+
+    .footer_side {
+        -webkit-box-flex: 0;
+        -ms-flex: none;
+        flex: none;
+    }
+
+    .footer_side li {
+        list-style: none;
+        line-height: 1.2;
+        padding: 0.6em 3em;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .desktop_wrapper {
+        background-image: url(IMG/background-img.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .logo_container img,
+    .BBB_container img {
+        width: 6%;
+    }
+
+    .logo_container {
+        background: white;
+        width: 100%;
+    }
+
+    .logo_container,
+    .BBB_container {
+        padding: 1% 0;
+        margin: 0 auto;
+    }
+
+    .form_container {
+        margin: 2em auto 0 auto;
+    }
+
+    .form_container h1 {
+        text-align: left;
+        font-size: 36px;
+        padding: 1em 0 0 0;
+        line-height: 1.3;
+        width: 88%;
+        margin: 0 auto;
+    }
+
+    .form_sub_text {
+        text-align: left;
+        font-size: 16px;
+        padding: 0;
+        width: 88%;
+        margin: 0 auto;
+        padding: 1em 0 1em 0;
+    }
+
+    .zip_button:hover {
+        background-color: #001F8D;
+    }
+}
+
+@media screen and (min-width: 1200px) {
 
     .desktop_wrapper {
         background-image: url(IMG/background-img.jpg);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center right;
+    }
+
+    .logo_container {
+        background: none;
+        width: inherit;
     }
 
     .logo_container img,
@@ -357,10 +449,6 @@ body {
         padding: 1em 0 1em 0;
     }
 
-    .zip_button:hover {
-        background-color: #001F8D;
-    }
-
     .footer_container {
         padding: 1.5em 2em;
         -webkit-box-orient: vertical;
@@ -386,11 +474,15 @@ body {
     }
 
     .footer_side li a {
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    .lower_footer_container {
+        padding: 1.5em 0.5em;
     }
 
     .lower_footer_container p {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .footer_side li a:hover {
@@ -400,4 +492,3 @@ body {
     .lower_footer_container p a:hover {
         color: #0499D3;
     }
-}
