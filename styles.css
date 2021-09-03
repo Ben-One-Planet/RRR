@@ -315,6 +315,28 @@ body {
 
 @media screen and (min-width: 768px) {
 
+    .desktop_wrapper {
+        background-image: url(IMG/background-img.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .form_container {
+        margin: 2em auto 0 auto;
+    }
+
+    .logo_container {
+        background: white;
+        width: 100%;
+    }
+
+    .logo_container,
+    .BBB_container {
+        padding: 2% 0;
+        margin: 0 auto;
+    }
+
     .form_container {
         width: 65%;
         max-width: 500px;
@@ -323,16 +345,16 @@ body {
     .form_container h1 {
         font-size: 28px;
         line-height: 1.3;
+        text-align: center;
+    }
+
+    .form_sub_text {
+        text-align: center;
     }
 
     .logo_container img,
     .BBB_container img {
-        width: 10%;
-    }
-
-    .logo_container,
-    .BBB_container {
-        padding: 3% 0;
+        width: 8%;
     }
 
     .footer_side {
@@ -351,35 +373,13 @@ body {
 
 @media screen and (min-width: 1024px) {
 
-    .desktop_wrapper {
-        background-image: url(IMG/background-img.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-
     .logo_container img,
     .BBB_container img {
         width: 6%;
     }
 
-    .logo_container {
-        background: white;
-        width: 100%;
-    }
-
-    .logo_container,
-    .BBB_container {
-        padding: 1% 0;
-        margin: 0 auto;
-    }
-
-    .form_container {
-        margin: 2em auto 0 auto;
-    }
-
     .form_container h1 {
-        text-align: left;
+        text-align: center;
         font-size: 36px;
         padding: 1em 0 0 0;
         line-height: 1.3;
@@ -388,7 +388,7 @@ body {
     }
 
     .form_sub_text {
-        text-align: left;
+        text-align: center;
         font-size: 16px;
         padding: 0;
         width: 88%;
@@ -401,7 +401,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1150px) {
 
     .desktop_wrapper {
         background-image: url(IMG/background-img.jpg);
@@ -424,11 +424,11 @@ body {
     .BBB_container {
         padding: 2% 0;
         display: block;
-        margin: 0 auto 0 10%;
+        margin: 0 auto 0 5%;
     }
 
     .form_container {
-        margin: 0 auto 0 10%;
+        margin: 0 auto 0 5%;
     }
 
     .form_container h1 {
@@ -492,3 +492,36 @@ body {
     .lower_footer_container p a:hover {
         color: #0499D3;
     }
+}
+
+@media screen and (min-width: 1300px) {
+
+    .logo_container,
+    .BBB_container {
+        padding: 2% 0;
+        display: block;
+        margin: 0 auto 0 10%;
+    }
+
+    .form_container {
+        margin: 0 auto 0 10%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+
+    .desktop_wrapper {
+        background-size: 75%;
+    }
+
+    .logo_container,
+    .BBB_container {
+        padding: 2% 0;
+        display: block;
+        margin: 0 auto 0 15%;
+    }
+
+    .form_container {
+        margin: 0 auto 0 15%;
+    }
+}
