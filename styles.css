@@ -518,10 +518,10 @@ body {
     .BBB_container {
         padding: 2% 0;
         display: block;
-        margin: 0 auto 0 15%;
+        margin: 0 auto 0 7%;
     }
 
     .form_container {
-        margin: 0 auto 0 15%;
+        margin: 0 auto 0 7%;
     }
 }
