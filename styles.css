@@ -404,7 +404,6 @@ body {
 @media screen and (min-width: 1150px) {
 
     .desktop_wrapper {
-        background-image: url(IMG/background_small.jpg);
         background-size: contain;
         background-position: center right;
     }
@@ -505,26 +504,22 @@ body {
     .form_container {
         margin: 0 auto 0 10%;
     }
-
-    .desktop_wrapper {
-        background-image: url(IMG/background_large.jpg);
-    }
 }
 
 @media screen and (min-width: 1600px) {
-
-    .desktop_wrapper {
-        background-size: 75%;
-    }
 
     .logo_container,
     .BBB_container {
         padding: 2% 0;
         display: block;
-        margin: 0 auto 0 7%;
+        margin: 0 auto 0 12%;
     }
 
     .form_container {
-        margin: 0 auto 0 7%;
+        margin: 0 auto 0 12%;
+    }
+
+    .form_container {
+        max-width: 650px;
     }
 }
