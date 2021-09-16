@@ -37,6 +37,8 @@ body {
     width: 20%;
     display: block;
     height: auto;
+    -ms-flex-item-align: center;
+    align-self: center;
 }
 
 .form_container {
